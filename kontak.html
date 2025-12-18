@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | WS Floral Studio</title>
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --maroon: #8b2e2e;
+        --pink: #ffd6e7; /* background pink */
+        --dark: #222;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--pink); /* PINK BACKGROUND */
+        color: #333;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 80px;
+      }
+
+      header h1 {
+        font-family: "Playfair Display", serif;
+        color: var(--maroon);
+        font-size: 28px;
+      }
+
+      nav a {
+        margin-left: 40px;
+        text-decoration: none;
+        color: var(--dark);
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        color: var(--maroon);
+      }
+
+      /* ===== KONTAK ===== */
+      .kontak {
+        padding: 60px 80px;
+        max-width: 800px;
+      }
+
+      .kontak h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        color: var(--maroon);
+        margin-bottom: 10px;
+      }
+
+      .kontak p.desc {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .item {
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        font-size: 18px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .item span {
+        font-size: 22px;
+      }
+
+      .item strong {
+        display: block;
+        font-weight: 600;
+        color: var(--maroon);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .kontak {
+          padding: 40px 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kontak</h1>
+      <nav>
+        <a href="index.html">index</a>
+        <a href="koleksi.html">Koleksi</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="kontak">
+      <h2>Contact Us</h2>
+      <p class="desc">
+        Hubungi kami untuk pemesanan, konsultasi, atau custom rangkaian bunga.
+      </p>
+
+      <div class="info">
+        <div class="item">
+          <span>📱</span>
+          <div>
+            <strong>WhatsApp</strong>
+            082181327931
+          </div>
+        </div>
+
+        <div class="item">
+          <span>📷</span>
+          <div>
+            <strong>Instagram</strong>
+            @wsfloralstudio
+          </div>
+        </div>
+
+        <div class="item">
+          <span>📍</span>
+          <div>
+            <strong>Alamat Toko</strong>
+            Jl. lintas Sumatera Kota MEDAN
+          </div>
+        </div>
+
+        <div class="item">
+          <span>⏰</span>
+          <div>
+            <strong>Jam Operasional</strong>
+            Setiap hari | 08.00 – 21.00 WIB
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
